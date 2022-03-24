@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/enigma-simulator/static/css/main.69b5445e.css",
+    "main.js": "/enigma-simulator/static/js/main.fe60d957.js",
+    "static/js/787.e5ce3d5e.chunk.js": "/enigma-simulator/static/js/787.e5ce3d5e.chunk.js",
+    "index.html": "/enigma-simulator/index.html",
+    "main.69b5445e.css.map": "/enigma-simulator/static/css/main.69b5445e.css.map",
+    "main.fe60d957.js.map": "/enigma-simulator/static/js/main.fe60d957.js.map",
+    "787.e5ce3d5e.chunk.js.map": "/enigma-simulator/static/js/787.e5ce3d5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69b5445e.css",
+    "static/js/main.fe60d957.js"
+  ]
+}
