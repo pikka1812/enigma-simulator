@@ -1,0 +1,154 @@
+.result, .keyboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.machine {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.middle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #999;
+}
+.utility {
+    width: 45%;
+    border-right: 1px solid #999;
+}
+
+.utility > button {
+    padding: 16px;
+    margin: 20px;
+}
+
+.history {
+    width: 45%;
+    border-left: 1px solid #999;
+    max-height: fit-content;
+    overflow-y:scroll;
+}
+
+.keyboard-row {
+    display: flex;
+}
+.rotor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-width: 20%;
+}
+.rotor > *{
+    display: flex;
+    align-items: center;
+}
+#rotor-1, #rotor-2, #rotor-3 {
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower, .greater {
+    cursor: pointer;
+    max-height: 60px;
+}
+
+.keynode, .keyboard-node{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: 1px solid gray;
+    margin: 20px;
+}
+
+.keyboard-node {
+    cursor: pointer;
+    box-shadow: 0 5px#999;
+}
+
+.keyboard-node:hover {
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+.keyboard-node:active{
+    background-color: rgb(107, 107, 107);
+    color: white;
+    box-shadow: 0 2px#999;
+    transform: translateY(3px);
+}
+
+.rotor-3-process, .rotor-2-process, .rotor-1-process, .reflector {
+    margin: 10px;
+    border: 1px solid black;
+
+}
+#process {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgb(179, 179, 179);
+}
+.alphabet {
+    display: flex;
+    justify-content: center;
+    margin : 20px 40px;
+}
+.character, .in > #input-rotor-1, .in > #input-rotor-2, .in > #input-rotor-3 , .in > #input-reflector, .out > #output-rotor-1, .out > #output-rotor-2, .out > #output-rotor-3, .out > #output-reflector {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin : 0px 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+.inout {
+    display: flex;
+}
+.inout > * {
+    padding: 0 120px;
+}
+
+.in {
+    color : red;
+}
+.out {
+    color: blue;
+}
+
+.in-char, .in > #input-rotor-1, .in > #input-rotor-2, .in > #input-rotor-3 , .in > #input-reflector{
+    background-color: red;
+    color:white;
+}
+
+.out-char, .out > #output-rotor-1, .out > #output-rotor-2, .out > #output-rotor-3, .out > #output-reflector, .highlight, .pair-choosen {
+    background-color: blue;
+    color: white;
+}
+
+
+
