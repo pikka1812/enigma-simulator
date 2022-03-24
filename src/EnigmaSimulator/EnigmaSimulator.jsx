@@ -365,7 +365,7 @@ export default class EnigmaSimulator extends React.Component {
         
         const plugboardPair = document.getElementsByClassName("pair-choosen");
 
-        if(plugboardPair.length == 2) {
+        if(plugboardPair.length === 2) {
             pair.push({
                 first_char: plugboardPair.item(0).innerHTML,
                 second_char: plugboardPair.item(1).innerHTML,
@@ -467,6 +467,8 @@ export default class EnigmaSimulator extends React.Component {
                             <hr />
                             <h3>Plugboard</h3>
                             <div>{plugboard}</div>
+                            <br />
+                            <div>Note: Plugboard is currently bugged (Will fix it soon)</div>
                         </div>
                         <div className="rotor">
                             <div>
